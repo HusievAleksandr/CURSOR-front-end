@@ -124,17 +124,20 @@
 
 //Подсчет дубликатов
 
-let Stringa = 'abbaaddaabbdd';
- console.log(dublikat(Stringa));
+//let Stringa = 'Indivisibilityyy';
+//console.log(dublikat(Stringa));
+// 
+//function dublikat (str){
+//    let bezD= str.toLowerCase().split('').filter((x, i) => str.indexOf(x) === i);
+//    let rezult= bezD.map((n, i, ns) => {
+//    let poisk = str.toLowerCase().split('').filter(el=>el ===n );
+//    return poisk.length > 1 ? +1 : 0; });
+// return rezult.reduce((a,b)=>{return a+b},0);   
+//}
 
-function dublikat (str){
-    let rezult;
-    return str.split('').map((n, i, ns) => {
-                return rezult =  n[i]==n[i+i]?+1:-1;});
 
- 
 
-}
+//
 
 
 
