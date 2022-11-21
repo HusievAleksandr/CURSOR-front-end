@@ -1,4 +1,4 @@
-//et masiv = 10;
+//let masiv = 10;
 //   let returnses = solution(masiv);
 //
 //   function solution(number){
@@ -137,7 +137,35 @@
 
 
 
+//Найдите выброс четности
+
+//let dano = [0,0,3,0,0] ;
+//console.log(findOutlier(dano));
 //
+//function findOutlier(integers){
+//  let chitni = integers.filter((n, i, ns)=> n % 2 ===0); 
+//  let nechitni = integers.filter((n, i, ns)=> n % 2 !== 0); 
+//  return chitni.length > 1?nechitni[0]: chitni[0] ;
+//  }
+
+
+//Прыгающие мячи
+
+//let h = 30.0;
+//let bounce = 1.0;
+//let wind = 1.5;
+//console.log(bouncingBall(h, bounce, wind));
+//
+//function bouncingBall(h,  bounce,  wind) {
+//    
+//    let result = -1; 
+//    if (h>0 && bounce<1 && bounce>0 && wind < h){
+//    while(h>wind){h=h*bounce; result+=2;}};
+//    return result;
+//}
 
 
 
+
+
+//
