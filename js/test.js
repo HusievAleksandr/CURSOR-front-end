@@ -168,4 +168,16 @@
 
 
 
+//Преобразование RGB в шестнадцатеричный формат
+//unction rgb(r, g, b) {
+//return [r,g,b].map((n)=> ( (n<0? n=00: n)&& (n>255? n=255: n)).toString(16).padStart(2, '0')).join('').toUpperCase();
+//  }
+// 
+// console.log(rgb(110,272,112));
+// console.log(rgb(294,11,124));
+
+
+
+
 //
+ 
