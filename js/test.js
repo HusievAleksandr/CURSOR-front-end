@@ -93,7 +93,7 @@
 //t masiv =[20,10,-80,10,10,15,35];
 //nsole.log(findEvenIndex (masiv));
 //
-//nction findEvenIndex(arr)
+//fnction findEvenIndex(arr)
 //   
 //   let itog= -1;
 //   for (let i = 0; i < arr.length; i++){
@@ -179,5 +179,56 @@
 
 
 
-//
+//Создать номер телефона
+//console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
+
+//function createPhoneNumber(numbers){
+//    return "(" + numbers.splice(0,3).join('')+ ")"+ " " + numbers.splice(0,3).join('') + "-" + numbers.splice(0,4).join('');
+//  }
+
+
+
+
+//Последовательность Трибоначчи - не доделано
+//onsole.log(tribonacci([1,1,1], 11));
+//unction tribonacci(signature,n){
+//    let rezult = [];
+//   for (let g=3; g==n ; g++){rezult [g+1]=signature[g-3]+signature[g-2]+signature[g-1]}; 
+//   return rezult;  
+//   console.log();
+// }
  
+
+//N-й Фибоначчи
+//console.log(nthFibo(3));
+//function nthFibo(n) {
+//let fobanaci =[0,1];
+//for (let i =1; i < (n-1); i++){fobanaci.push(fobanaci[i]+fobanaci[i-1])};
+//return fobanaci[n-1];
+//  }
+
+
+
+
+//Настойчивый жук.
+//onsole.log(persistence(999));
+//unction persistence(num) { 
+//   let kol_cikl = 0;
+//   let nm =  String(num);     
+//   while (nm.length>1){
+//   nm = nm.split('').reduce( (x,y) => String(Number(x) * Number(y)));    
+//   kol_cikl++;
+//   console.log(nm);
+//   }
+//   return kol_cikl;
+//}
+
+
+
+
+
+//
+
+
+
+
