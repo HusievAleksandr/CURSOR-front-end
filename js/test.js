@@ -227,8 +227,12 @@
 
 
 
+//Извлечь доменное имя из URL
+//console.log(domainName('http://google.com'));
+//function domainName(url){
+//    return url.split(/[/ .]/).filter(el => el!='http:' && el!=''&& el!='www'&& el!='https:').shift();
 //
+//}
 
 
-
-
+//
