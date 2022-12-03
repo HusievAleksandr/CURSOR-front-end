@@ -15,7 +15,7 @@
 - git merge
 - git clone
 
-## .gitignore файл - Ігноровані файли Git
+## .gitignore файл - ігноровані файли Git
 
 ## Advanced:
 
