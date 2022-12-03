@@ -1,8 +1,8 @@
 # CURSOR-front-end
-##Перелік основних команд: 
+## Перелік основних команд: 
 
--git config --global user.name blabla
--git config --global user.email blabal@bla
+- git config --global user.name blabla
+- git config --global user.email blabal@bla
 -git init
 -git status
 -git add
@@ -15,11 +15,11 @@
 -git merge
 -git clone
 
-##.gitignore файл - Ігноровані файли Git
+## .gitignore файл - Ігноровані файли Git
 
-##Advanced:
+## Advanced:
 
--git revert
+- git revert
 -git reset
 -git rebase
 -git cherry-pick
