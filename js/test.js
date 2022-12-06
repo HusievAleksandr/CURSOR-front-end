@@ -237,16 +237,14 @@
 
 //Жадность это хорошо
 
-console.log(score([1, 5, 1, 2, 2,3]));
+//console.log(score([1, 5, 1, 2, 2,3]));
+//
+//function score( dice ) {
+//   let rz= [];
+//   for (let i =1; i<7; i++){
+//    let g= dice.filter((n)=>n==i).length;
+//    rz.push( g>=3 ? i==1 && g==3?i*1000:i==1 && g==4 ?1100:i*100 :g<3 && i==5?i*g*10:g<3 && i==1? i*g*100:0);
+//    };
+//   return rz.reduce((a,b)=> a+b);
+//  }
 
-function score( dice ) {
-   let rz= [];
-   for (let i =1; i<7; i++){
-    let g= dice.filter((n)=>n==i).length;
-    rz.push( g>=3 ? i==1 && g==3?i*1000:i==1 && g==4 ?1100:i*100 :g<3 && i==5?i*g*10:g<3 && i==1? i*g*100:0);
-    };
-   return rz.reduce((a,b)=> a+b);
-
-  
-
-  }
