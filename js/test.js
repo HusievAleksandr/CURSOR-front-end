@@ -248,3 +248,19 @@
 //   return rz.reduce((a,b)=> a+b);
 //  }
 
+
+// Улитка
+
+//onsole.log(snail([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15], [16, 17, 18, 19, 20], [21, 22, 23, 24, 25]]));
+//
+//unction snail (array) {
+//   const itog =[];
+//   while (array.length){itog.push(...array.shift()), 
+//        array.map(a=> itog.push(a.pop())),
+//        array.reverse().map(a=> a.reverse());
+//        }
+//   return itog;       
+// }
+
+//
+
