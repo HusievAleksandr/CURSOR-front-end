@@ -1,3 +1,4 @@
+console.warn("Змінні та типи:");
 const apple= 15.678, orange= 123.965, mango= 90.2345; 
 const amount = apple+orange+mango;
 const random_numbers = (Math.random() * (10 - 1) + 1).toFixed();
