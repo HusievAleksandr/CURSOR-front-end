@@ -262,5 +262,27 @@
 //   return itog;       
 // }
 
-//
+//Проверка пароля регулярным выражением
 
+ //const REGEXP = /^(?![\s])(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,}$/;;
+
+//const actual = REGEXP.test('fjd3IR9');
+//const actual_2 = REGEXP.test('djI38D55@@');
+//console.log(actual, actual_2);	
+
+
+		//('fjd3IR9', true);
+		//('ghdfj32', false);
+		//('DSJKHD23', false);
+		//('dsF43', false);
+		//('4fdg5Fj3', true);
+		//('DHSJdhjsU', false);
+		          //('fjd3IR9.;', false);
+		//('fjd3  IR9', false);
+		//('djI38D55', true);
+		//('djI3_8D55', false);
+		        //('djI38D55@@', false);
+
+
+
+//
