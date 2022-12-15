@@ -32,7 +32,7 @@ const deleteDuplicateLetter = (str)=> {
  
 
 
-const dz = `Функція 1 Найбільша цифра в цьому числі: ${getMaxDigit(153)}</br>
+const dz = `Функція 1 Найбільша цифра в цьому числі: ${getMaxDigit('6, 987')}</br>
             Функція 2 Визначає ступінь числа: ${powerOfNumber(5,5)}</br>
             Функція 3 Форматує ім'я: ${formatsTheName("вЛАД")}</br>
             Функція 4 Сума після оплати податку: ${amountAfterTaxes(1000,18,1.5)}</br>
