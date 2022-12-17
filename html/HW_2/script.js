@@ -1,11 +1,15 @@
 console.warn("Цикли і Розгалуження:");
-let N=0, M=0, double_numbers, rezult=0;
+let N=null, M=null, double_numbers, rezult=0;
 
-do { !Number.isInteger(N)||!Number.isInteger(M)? alert("Введено не коректне число(не ціле) або присутні букви. Введіть коректні дані"):N=0, M=0;
-    N = Number(prompt("Введіть ціле число, від якого почнеться додавання"));
-    M = Number(prompt("Введіть ціле число, до якого буде додавання"));
-    double_numbers= confirm("Щоб пропускаті парні числа тисни OK??");
-} while (!Number.isInteger(N)||!Number.isInteger(M));
+do { N = Number(prompt("Введіть ціле число, від якого почнеться додавання"));
+    if (!Number.isInteger(N)) {alert("Введено не коректне число(не ціле) або присутні букви. Введіть коректні дані");}    
+} while (!Number.isInteger(N));
+
+do { M = Number(prompt("Введіть ціле число, до якого буде додавання. Воно повинно бути більше першого."));
+     if (N>=M || !Number.isInteger(M)){alert("Введено не коректне число(не ціле) або присутні букви, перше число більше за друге. Введіть коректні дані");}    
+} while (N>=M || !Number.isInteger(M));
+
+double_numbers= confirm("Щоб пропускати парні числа тисни OK??");
      
 for (let i= N ; i<(M+1) ; i++ ){
           if (double_numbers){i%2?rezult += i: rezult;}
