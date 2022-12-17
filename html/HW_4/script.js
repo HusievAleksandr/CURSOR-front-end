@@ -10,14 +10,16 @@ const random_assessment =generate_random_estimates(pairs_and_projects);
 
 
 function boy_girl (arr){
-        let result =[[],[]];
-        arr.map((el) => el.slice(-1)=='а'? result[0].push(el):result[1].push(el));
-        return result;   }
+        let sort =[[],[]];
+        let result =[];
+        arr.map((el) => el.slice(-1)=='а'? sort[0].push(el):sort[1].push(el));
+        for (let i=0; i<sort[0].length; i++){ result.push([sort[1][i],sort[0][i]]) }
+        return result;  }
 
 function random_command(student,them){
         let result =[];
         for (let i=0; i<them.length; i++){
-          result.push([student[0][i] + ' і ' + student[1][i], them[i]]) ; 
+          result.push([student[i][0] + ' і ' + student[i][1], them[i]]) ; 
         }
          return result;                }
 
@@ -37,8 +39,9 @@ function generate_random_estimates (assessment){
 
 
 const total =`1. Розділ студентів на пари: </br>
-                -  Дівчата: ${pair_up[0]} </br>
-                -  Хлопці: ${pair_up[1]} </br></br>
+                -  ${pair_up[0]} </br>
+                -  ${pair_up[1]} </br>
+                -  ${pair_up[2]} </br></br>
               2. Пари та теми проєктів: </br>
                 - ${pairs_and_projects[0]}</br>
                 - ${pairs_and_projects[1]}</br>
