@@ -9,7 +9,7 @@ do { M = Number(prompt("Введіть ціле число, до якого бу
      if (N>=M || !Number.isInteger(M)){alert("Введено не коректне число(не ціле) або присутні букви, перше число більше за друге. Введіть коректні дані");}    
 } while (N>=M || !Number.isInteger(M));
 
-double_numbers= confirm("Щоб пропускати парні числа тисни OK??");
+double_numbers= confirm("Щоб пропускати парні числа тисни OK");
      
 for (let i= N ; i<(M+1) ; i++ ){
           if (double_numbers){i%2?rezult += i: rezult;}
