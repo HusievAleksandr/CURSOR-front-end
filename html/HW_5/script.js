@@ -39,6 +39,7 @@ const divideByThree = (word) => {
 //       
 //        return arr.reverse();
 //});
+//
  
 
 
