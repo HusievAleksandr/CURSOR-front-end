@@ -33,17 +33,26 @@ const divideByThree = (word) => {
         arr.push(str.substring(i,i+3));
         }return arr;
                                 };
-                                
-//const generateCombinations= (word)=> word.split('').map((el,i,arr)=>{
-//       
-//       
-//        return arr.reverse();
-//});
-//
+
+                          
+                              
+const generateCombinations= (word)=>{
+        if (word.length<2)return word;
+        if (word.length>10)return 'Введіть строку не більше 10-ти символів';
+
+        let result=[], arr = [...word];
+        arr.forEach((el,i)=>{   
+
+        for (let options of generateCombinations(word.slice(0,i)+word.slice(i+1,word.length))){
+                    result.push(el+options);}    
+                         });
+        return result;
+                                };
+
  
 
 
-const dz = `Функція 1 : ${getRandomArray(15, 1, 100)}</br>
+const hw = `Функція 1 : ${getRandomArray(15, 1, 100)}</br>
 Функція 2 : ${getModa(6, 2, 55, 11, 78, 2, 55, 77,57, 87, 23, 2, 56, 3, 2)}</br>
 Функція 3 : ${getAverage(6, 2, 55, 11, 78, 2, 55, 77,57, 87, 23, 2, 56, 3, 2)}</br>
 Функція 4 : ${getMedian(6, 2, 55, 11, 78, 2, 55, 77,57, 87, 23, 2, 56, 3, 2)}</br>
@@ -51,13 +60,13 @@ const dz = `Функція 1 : ${getRandomArray(15, 1, 100)}</br>
 Функція 6 : ${countPositiveNumbers(1, -2, 3, -4, -5, 6)}</br>
 Функція 7 : ${getDividedByFive(6, 2,55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2)}</br>
 Функція 8 : ${replaceBadWords("Are you fucking kidding?", 'shit','fuck')}</br>
-Функція 9 : ${divideByThree("Com   mande   r")}</br>`;
-//Функція 10 : ${generateCombinations("man")}</br>
+Функція 9 : ${divideByThree("Com   mande   r")}</br>
+Функція 10 : ${generateCombinations("man")}</br>`;
         
 
            
-console.log (dz.replaceAll('</br>',''));
-document.writeln(dz);
+console.log (hw.replaceAll('</br>',''));
+document.writeln(hw);
 
 
 
