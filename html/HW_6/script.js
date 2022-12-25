@@ -27,7 +27,7 @@ const getAverageMark = (students) =>{let result = Object.values(students.subject
 const getStudentInfo = (students) => { let result= {}; Object.assign(result, students); 
                                         result.averageMark = getAverageMark(students);
                                         delete result.subjects;
-                                        const organize = object => ({ course: undefined, name: undefined,averageMark: undefined })
+                                        const organize = object => ({ course: undefined, name: undefined,averageMark: undefined ,...result})
                                         return organize(result);};
 
 
