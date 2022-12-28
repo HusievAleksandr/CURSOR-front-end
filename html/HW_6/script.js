@@ -30,17 +30,27 @@ const getStudentInfo = (students) => { let result= {}; Object.assign(result, stu
                                         const organize = object => ({ course: undefined, name: undefined,averageMark: undefined ,...result})
                                         return organize(result);};
 
-
+const getStudentsNames = (students)=> students.map((el)=> el.name).sort();
+const getBestStudent= (students)=> students.map((el)=> getAverageMark(el)).reduce((a,b,i)=>b>a?students[i-1].name:students[i].name);
+const calculateWordLetters= (str) => { let result={};
+                        str.split('').map((el,i,arr)=> result[el]=arr.filter((n)=> n==el).length);
+                        return result;}
 
 const hw = `Функція 1: ${getSubjects(students[0])}</br>
 Функція 2: ${getAverageMark(students[0])}</br>
 Функція 3: дв.консоль </br>
+Функція 4: ${getStudentsNames(students)}</br>
+Функція 5: ${getBestStudent(students)}</br>
+Функція 6: дв.консоль </br>
 `;
 document.writeln(hw);   
 console.log (hw.replaceAll('</br>',''));
 
 console.warn("Функція 3 :");
 console.log(getStudentInfo(students[0]));
+
+console.warn("Функція 6 :");
+console.log (calculateWordLetters('тест'));
 
 
 
