@@ -32,7 +32,7 @@ console.log('Litva :  ', getTotalTaxes.call(litva));
 
 // task - 4
 function getMySalary(country){
-        let result ={};
+        const result ={};
 
         result.salary = Math.round(Math.random() * (2000 - 1500) + 1500);
         result.taxes= Math.round(country.tax*result.salary);
