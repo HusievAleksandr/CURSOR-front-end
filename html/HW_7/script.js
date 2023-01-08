@@ -8,7 +8,7 @@ function getMyTaxes(salary){
        return (this.tax * salary).toFixed(2);
                         }
 
-console.log('Salary 2000 in Ukraine :  ', getMyTaxes.call(latvia, 2000));
+console.log('Salary 2000 in Ukraine :  ', getMyTaxes.call(ukraine, 2000));
 
 
 // task - 2
