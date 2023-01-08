@@ -56,7 +56,7 @@ console.log(one_student.marks);
  class BudgetStudent extends Student {
         constructor(university, course, fullName){
                 super(university, course, fullName);
-                //setInterval(this.getScholarship,3000);
+                setInterval(() => this.getScholarship(), 30000);
         }
         
         
@@ -71,7 +71,7 @@ console.log(one_student.marks);
 
  let two_student = new BudgetStudent ('Вищої Школи Психотерапії м.Київ', 3 , 'Роман Романович Бендер');
  
- //Перевірка
+ //Перевірки
  console.log(two_student.getInfo());
  two_student.marks = 3;
  two_student.marks = 5;
@@ -80,11 +80,7 @@ console.log(one_student.marks);
 console.log(two_student.marks);
 console.log(two_student.getAverageMark());
 
-two_student.dismiss();
-two_student.getScholarship();
 
-two_student.recover();
-two_student.getScholarship();
 
 
 
