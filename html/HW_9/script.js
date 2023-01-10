@@ -1,8 +1,8 @@
 const generateBlocks = ()=>{
-       let el = document.querySelector('#square');
+       const el = document.querySelector('#square');
 
        for (let i = 0; i < 25; i++) {
-        let elem= document.createElement("span");
+        const elem= document.createElement("span");
         el.appendChild(elem);
         elem.style.cssText=` width: 50px; height: 50px;background-color: ${getRandomColor()}`;
         }       
