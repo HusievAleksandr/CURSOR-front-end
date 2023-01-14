@@ -8,7 +8,7 @@ keystrokes.addEventListener("click", function(e){
   get_all_letters.forEach((el)=>{el.style.border='1px solid silver';});
  
   target.style.border='5px solid rgb(13, 245, 63)';
-  music_playback.setAttribute("src", `audio/${target.textContent}.mp3`);
+  music_playback.setAttribute("src", `audio/${target.textContent.toLowerCase()}.mp3`);
                                                 });
 
 
