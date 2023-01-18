@@ -1,4 +1,4 @@
-function  get_hieroglyph (){     
+function  getHhieroglyph (){     
           return  new Promise((resolve, reject)=> {
                               setTimeout(() => {
                               resolve ( String.fromCharCode(String(Date.now()).slice(-5)) );  
