@@ -1,7 +1,7 @@
 function  get_hieroglyph (){     
           return  new Promise((resolve, reject)=> {
                               setTimeout(() => {
-                              resolve ( String.fromCharCode(String(Date.now()).slice(4)) );  
+                              resolve ( String.fromCharCode(String(Date.now()).slice(-5)) );  
                                           }, 50);            
                                                                  })
                             }                             
