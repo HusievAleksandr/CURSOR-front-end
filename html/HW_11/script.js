@@ -8,7 +8,7 @@ function  getHhieroglyph (){
 
 async function getRandomChinese (length){                                   
                 let result='';
-                while(result.length<length) {result+= await get_hieroglyph()}
+                while(result.length<length) {result+= await getHieroglyph()}
                 console.log(result);
                                         }
                 
