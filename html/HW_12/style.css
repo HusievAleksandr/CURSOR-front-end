@@ -115,7 +115,7 @@ body{
 
 .people>p>span {
     display: block; 
-    width: 250px;
+    max-width: 250px;
     
 
 }
