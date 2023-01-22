@@ -86,8 +86,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin: 5px;
-    width: 450px;
-    height: 300px;
+    width: 450px;    
     font-size: 24px;
     text-align: left;
     animation: show_1 5s ease;
