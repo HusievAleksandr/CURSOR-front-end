@@ -264,25 +264,41 @@
 
 //Проверка пароля регулярным выражением
 
- //const REGEXP = /^(?![\s])(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,}$/;;
-
-//const actual = REGEXP.test('fjd3IR9');
-//const actual_2 = REGEXP.test('djI38D55@@');
-//console.log(actual, actual_2);	
-
-
-		//('fjd3IR9', true);
-		//('ghdfj32', false);
-		//('DSJKHD23', false);
-		//('dsF43', false);
-		//('4fdg5Fj3', true);
-		//('DHSJdhjsU', false);
-		          //('fjd3IR9.;', false);
-		//('fjd3  IR9', false);
-		//('djI38D55', true);
-		//('djI3_8D55', false);
-		        //('djI38D55@@', false);
-
-
-
+//const REGEXP = /^(?![\s])(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,}$/;;
 //
+//onst actual = REGEXP.test('fjd3IR9');
+//onst actual_2 = REGEXP.test('djI38D55@@');
+//onsole.log(actual, actual_2);	
+
+
+
+
+//Добавление больших чисел
+
+//nction add(a, b) {
+//	a = [...a].reverse()
+//b = [...b].reverse()
+//
+//for (let q=0; q<b.length; ++q) {
+//  if ((a[q] = ~~a[q] + ~~b[q]) > 9) {
+//    a[q] -= 10
+//    b[q+1] = ~~b[q+1] + 1
+//  }
+//}
+//
+//return a.reverse().join("")
+//}
+//
+//console.log(add('63829983432984289347293874', '90938498237058927340892374089'));
+
+
+//Подсчет комбинаций сдачи
+
+function countChange(money, coins) { let result =0, test=[],con =[...coins];
+  coins.map((el,i,arr)=>{ money%el==0? ++result: test.push(money%el)});
+  //if (test.length>0){test.forEach((el)=>result=result+countChange(el,con))}; // здесь не правильно
+  return result;
+}
+
+console.log(countChange (9,[1,3,4,6,9]));
+

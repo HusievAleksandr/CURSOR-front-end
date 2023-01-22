@@ -1,0 +1,145 @@
+
+body{
+    line-height: 1;
+    font-size: 16px;
+    text-align: center;
+    background-image: url(images/fon.jpg);
+    background-size: 100% auto;
+    background-attachment:fixed;
+    color: #ff6;
+    font-family: 'Teko', sans-serif;
+}
+
+
+#header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#header>img{
+    display: block;
+    margin: 0 auto;
+    width: 30%; 
+}
+
+
+
+
+#header>input {  
+  margin: 10px;
+  width: 50px;
+  font-size: 16px;
+  color: #ff6;
+  background-color: rgb(7, 7, 7);
+  background-clip: padding-box;
+  border: 1px solid #ff6;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#header>input[type="number"] {
+    font-size: 16px;
+    width: 50px;
+    height: 30px;
+}
+
+
+#header>input[type="submit"] {
+    width: 100px;
+    height: 30px;
+    border-bottom: 5px solid rgb(112, 112, 4); 
+}
+
+#header>input[type="submit"]:hover {
+    background-color: #ff6; 
+    border-color: rgb(112, 112, 4); 
+    color: rgb(17, 17, 17);
+}
+
+#header>input[type="submit"]:active {
+    border: none;
+}
+
+#header>span:hover{
+    color: azure;
+}
+
+#header>span:active{
+    color: rgb(235, 109, 6);
+    font-size: 20px;
+}
+
+
+
+#block {
+    margin: 0 auto ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;           
+    max-width: 1200px;           
+}
+.people {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    width: 450px;
+    height: 300px;
+    font-size: 24px;
+    text-align: left;
+    animation: show_1 5s ease;
+}
+
+@keyframes show_1 {
+    0%   { opacity: 0; margin-top: -150%;}
+    50%  {opacity: 0,75; margin-top: 10%;}
+    100% { opacity: 1; margin-top: 0%;}
+  }
+
+.people>img {
+    border-radius: 5px;
+    display: block;
+    width: 200px;
+    height: 300px;
+}
+.gender {
+    display: inline;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.people>p>span {
+    display: block; 
+    width: 250px;
+    
+
+}
+
+
+.planets {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    width: 400px;
+    height: 450px;
+    font-size: 24px;
+    text-align: left;
+    animation: show_1 5s ease;
+    
+}
+.planets>span{
+    display: block;
+    width: 400px;
+     
+}
+.planets>img{
+    width: 400px;
+    height: 400px; 
+}
+
+
