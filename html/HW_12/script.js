@@ -2,8 +2,8 @@
 const BASE_URL = "https://swapi.dev/api/";
 const get_people= document.querySelector('body');
 const post_block= document.querySelector('#block');
-const wookieeText = document.querySelector('#WOO');
-
+const text = document.querySelector('#WOO');
+let wookieeText = false;
 
 
 
@@ -11,7 +11,7 @@ const wookieeText = document.querySelector('#WOO');
 get_people.addEventListener("click", function(e){
     const movie_selection = document.querySelector('#films').value; 
     const target = e.target;
-    if(target.defaultValue=='GET'){getDataFromServer(`/films/${movie_selection}/`);}
+    if(target.defaultValue=='GET'){getDataFromServer(`/films/${movie_selection}/`);wookieeText=text.checked;}
     if(target.innerText=='NEXT>>'){getDataFromServer('/planets/');}
                                              });
 
@@ -49,10 +49,10 @@ function withdrawDisplayPeople(name,birth_year,gender,whrascwo) {
     people_images.setAttribute("src",`images/${name}.jpg`)
 
     const people_name = document.createElement('span');
-    people_name.textContent = wookieeText.checked? `Whrascwo: ${whrascwo}`:`Name: ${name}`;
+    people_name.textContent = wookieeText? `Whrascwo: ${whrascwo}`:`Name: ${name}`;
 
     const people_birth_year = document.createElement('span');
-    people_birth_year.textContent = wookieeText.checked? `Rhahrcaoac roworarc: ${birth_year}`:`Birth year: ${birth_year}`;
+    people_birth_year.textContent = wookieeText? `Rhahrcaoac roworarc: ${birth_year}`:`Birth year: ${birth_year}`;
 
     const people_gender =document.createElement('img');
     people_gender.setAttribute("src",`images/${gender=='n/a'|| gender=='none'?'na': gender}.png`);
