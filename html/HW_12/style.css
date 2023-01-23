@@ -63,6 +63,9 @@ body{
 #header>input[type="submit"]:active {
     border: none;
 }
+#header>span {
+    margin-right: 5px;
+}
 
 #header>span:hover{
     color: azure;
@@ -76,7 +79,7 @@ body{
 
 
 #block {
-    margin: 0 auto ;
+    margin: 10px auto ;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;           
@@ -114,7 +117,7 @@ body{
 
 .people>p>span {
     display: block; 
-    max-width: 250px;
+    max-width: 200px;
     
 
 }
