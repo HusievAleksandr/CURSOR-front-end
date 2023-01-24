@@ -17,7 +17,7 @@ body{
     left: 0;
     width: 100%; 
     font-size: 24px;
-    cursor: pointer;
+    
 }
 
 #header>img{
@@ -39,12 +39,13 @@ body{
   border: 1px solid #ff6;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
+  }
 
 #header>input[type="number"] {
     font-size: 16px;
     width: 50px;
     height: 30px;
+    cursor: pointer;
 }
 
 
@@ -52,6 +53,7 @@ body{
     width: 80px;
     height: 30px;
     border-bottom: 5px solid rgb(112, 112, 4); 
+    cursor: pointer;
 }
 
 #header>input[type="submit"]:hover {
@@ -67,11 +69,17 @@ body{
     margin-right: 3px;
 }
 
-#header>span:hover{
+#header>input[type="radio"]{
+    cursor: pointer;
+}
+#next {
+    cursor: pointer;
+}
+#next:hover{
     color: azure;
 }
 
-#header>span:active{
+#next:active{
     color: rgb(235, 109, 6);
     font-size: 20px;
 }
