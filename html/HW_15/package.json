@@ -1,0 +1,29 @@
+{
+  "name": "hw-15",
+  "version": "1.0.0",
+  "description": "hw_15",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/HusievAleksandr/CURSOR-front-end.git"
+  },
+  "author": "HusievAleksandr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HusievAleksandr/CURSOR-front-end/issues"
+  },
+  "homepage": "https://github.com/HusievAleksandr/CURSOR-front-end#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "package-name": "^0.1.0",
+    "yarn": "^1.22.19"
+  }
+}
